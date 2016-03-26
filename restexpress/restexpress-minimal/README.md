@@ -53,5 +53,5 @@ The server will be listening (by default) on port 8081 on localhost. A few route
 </pre>
 
 The SampleController.java read method was also changed to return a "Hello world" message. We can invoke the server with an Http GET request such as <b><u>http://localhost:8081/simple/test/books/id1.xml</u></b><br/>
-The response is shown below
+The response is shown below<br/>
 <img src='https://github.com/alainlompo/frontline-frontend/blob/master/restexpress/restexpress-minimal/src/main/resources/sample_request_003.png' alt='sample get response' />
