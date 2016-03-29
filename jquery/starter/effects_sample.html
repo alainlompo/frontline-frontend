@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+		<script src="jquery-2.2.2.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#bouton3").click(function() {
+					$("div").hide();
+				})
+				
+				$("#bouton4").click(function() {
+					$("div").show();
+				});
+				
+				$("#bouton5").click(function() {
+					$("div").toggle();
+				});
+				
+				$("#bouton6").click(function() {
+					$("div").toggle("slow", function tellit() {console.log("toogled!");});
+				});
+				
+				$("#bouton7").click(function() {
+					$("textarea").fadeOut("slow", function fadeitOut() {console.log("faded out!");});
+				});
+				
+				$("#bouton8").click(function() {
+					$("textarea").fadeIn("slow", function fadeitIn() {console.log("faded in!");});
+				});
+				
+				$("#bouton9").click(function() {
+					$("textarea").fadeToggle("slow", function fadeitIn() {console.log("toggled the fade!");});
+				});
+				
+			});
+		</script>
+	</head>
+	<body>		
+		<br/>
+		<div id="div1">
+			<h3>Why Jquery rocks....</h3>
+			<br/>
+			It is easy to realize how powerful the Jquery api has grown since its first release ten years ago....
+		</div>
+
+		<br/>
+		<table border='1' id="table1">
+			<tr>
+				<td><input type="button" id="bouton1" value="click here!"/></td>
+				<td>Let's see what goes here</td>
+				<td><h4>Test</h4></td>
+			</tr>
+			<tr>
+				<td><h5>TEST</h5></td>
+				<td><p>A new paragraph inside the table cell </p></td>
+				<td><input type="button" id="bouton2" value="Don't click here!"/></td>
+			</tr>
+			
+			<tr>
+				<td><h5>Hide and show things!</h5></td>
+				<td><input type="button" id="bouton3" value="Click here and hide the div elements!"/></td>
+				<td><input type="button" id="bouton4" value="Click here and show the div elements!"/></td>
+			</tr>
+			<tr>
+				<td><h5>Toggle between hide and show</h5></td>
+				<td colspan ="2"><input type="button" id="bouton5" value="Click here and toggle the div elements between hide and show!"/></td>
+				
+			</tr>
+			
+			<tr>
+				<td><h5>Toggle between hide and show</h5></td>
+				<td colspan ="2"><input type="button" id="bouton6" value="Click here and toggle the div elements between hide and show slowly!"/></td>
+				
+			</tr>
+			
+			<tr>
+				<td><h5>fade out</h5></td>
+				<td colspan ="2"><input type="button" id="bouton7" value="Click here and fade out the textarea below"/></td>
+				
+			</tr>
+			<tr>
+				<td><h5>fade in</h5></td>
+				<td colspan ="2"><input type="button" id="bouton8" value="Click here and fade in the invisible textarea below"/></td>
+				
+			</tr>
+			
+			<tr>
+				<td><h5>fade toggle</h5></td>
+				<td colspan ="2"><input type="button" id="bouton9" value="Click here and toggle between fadeIn and fadeOut"/></td>
+				
+			</tr>
+		</table>
+		<br/>
+		<div>
+			Loren Ipsum.....and so on....
+			
+		</div>
+		<br/>
+		<textarea width="60" height="40" id="txtArea2">Loren Ipsum, and so on ....</textarea>
+		<br/>
+		<div class="footerZone">
+			<h6><center>The footer is here</center></h6>
+		</div>
+		<br/>
+		
+
+	</body>
+</html>
