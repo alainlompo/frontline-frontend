@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+		<script src="jquery-2.2.2.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#flip").click(function() {
+					$("#footerDiv").slideDown("slow");
+				});
+				
+			});
+		</script>
+		<style> 
+			#footerDiv, #flip {
+				padding: 5px;
+				text-align: center;
+				background-color: #e5eecc;
+				border: solid 1px #c3c3c3;
+			}
+
+			#footerDiv {
+				padding: 50px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>		
+		<br/>
+		<div id="div1">
+			<h3>Why Jquery rocks....</h3>
+			<br/>
+			It is easy to realize how powerful the Jquery api has grown since its first release ten years ago....
+		</div>
+
+		<br/>
+		<table border='1' id="table1">
+			<tr>
+				<td><input type="button" id="bouton1" value="click here!"/></td>
+				<td>Let's see what goes here</td>
+				<td><h4>Test</h4></td>
+			</tr>
+		
+			<tr>
+				<td><h5>fade toggle</h5></td>
+				<td colspan ="2"><input type="button" id="bouton9" value="Click here and toggle between fadeIn and fadeOut"/></td>
+				
+			</tr>
+		</table>
+		<br/>
+		<div>
+			Loren Ipsum.....and so on....
+			
+		</div>
+		<br/>
+		<textarea width="60" height="40" id="txtArea2">Loren Ipsum, and so on ....</textarea>
+		<br/>
+		<div id="flip">Click to slide down panel</div>
+		<div class="footerZone" id="footerDiv">
+			<h6><center>The footer is here</center></h6>
+			<br/>
+			<p>
+				Hello [Jquery] world!!!
+			</p>
+		</div>
+		<br/>
+		
+
+	</body>
+</html>
