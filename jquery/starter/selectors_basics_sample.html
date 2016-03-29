@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+		<script src="jquery-2.2.2.js"></script>
+
+		<script>
+			$(document).ready(function(){
+			
+				// Element selector
+				// This click event handler will handle the click on all the elements of type input
+				$("input").click(function() {
+					alert("You have clicked on the input element with id " + this.id);
+				});
+				
+				// Id selector
+				//  This click event handler will react only when we click on the element with id bouton1
+				$("#bouton1").click(function() {
+					$("#div1").hide();
+				});
+				
+				// class selector
+				// The click event will now react for any element that has the class named footerZone
+				$(".footerZone").click(function() {
+					alert("You clicked inside the footer zone....");
+				});
+				
+				
+			});
+		</script>
+	</head>
+	<body>		
+		<br/>
+		<div id="div1">
+			<h3>Why Jquery rocks....</h3>
+			<br/>
+			It is easy to realize how powerful the Jquery api has grown since its first release ten years ago....
+		</div>
+
+		<br/>
+		<table border='1'>
+			<tr>
+				<td><input type="button" id="bouton1" value="click here!"/></td>
+				<td>Let's see what goes here</td>
+				<td><h4>Test</h4></td>
+			</tr>
+			<tr>
+				<td><h5>TEST</h5></td>
+				<td><p>A new paragraph inside the table cell </p></td>
+				<td><input type="button" id="bouton2" value="Don't click here!"/></td>
+			</tr>
+		</table>
+		<br/>
+		<div class="footerZone">
+			<h6><center>The footer is here</center></h6>
+		</div>
+
+	</body>
+</html>
