@@ -25,6 +25,28 @@
 					alert("You clicked inside the footer zone....");
 				});
 				
+				// The examples below show how to handle classic events that have equivalent jquery functions
+				// such as a mouse click a hover on an element, etc.
+				$("#table1").mouseenter(function() {
+					$("#table1").css("background-color", "#cccccc");
+				});
+				
+				$("#table1").mouseleave(function() {
+					$("#table1").css("background-color", "#ffffff");
+				});
+				
+				$("div").hover(function() {
+					$(this).css("background-color", "#abc854");
+				},
+				
+				function() {
+					$(this).css("background-color", "#ffffff");
+				}
+				
+				);
+				
+				
+				
 				
 			});
 		</script>
@@ -38,7 +60,7 @@
 		</div>
 
 		<br/>
-		<table border='1'>
+		<table border='1' id="table1">
 			<tr>
 				<td><input type="button" id="bouton1" value="click here!"/></td>
 				<td>Let's see what goes here</td>
@@ -51,9 +73,16 @@
 			</tr>
 		</table>
 		<br/>
+		<div>
+			Loren Ipsum.....and so on....
+			
+		</div>
+		<br/>
 		<div class="footerZone">
 			<h6><center>The footer is here</center></h6>
 		</div>
+		<br/>
+		
 
 	</body>
 </html>
